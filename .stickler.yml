@@ -1,0 +1,6 @@
+linters:
+  tslint: {  }
+  csslint: {  }
+files:
+  ignore:
+    - 'bower_components/*'
