@@ -10,5 +10,14 @@ export default createGlobalStyle`
 
   body {
     -webkit-font-smoothing: antialiased;
+    font-family: Roboto, sans-serif;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
   }
 `;
