@@ -22,10 +22,6 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ drawerOpened, toggleDrawer }) => {
-  const [animateDrawer, setAnimateDrawer] = useState(false);
-
-  const handleDrawerClick = useCallback(() => {}, []);
-
   return (
     <Container drawerOpened={drawerOpened}>
       <Navbar>
