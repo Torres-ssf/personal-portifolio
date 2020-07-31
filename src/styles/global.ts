@@ -10,7 +10,7 @@ export default createGlobalStyle`
 
   body {
     -webkit-font-smoothing: antialiased;
-    font-family: Roboto, sans-serif;
+    font-family: Ubuntu, sans-serif;
   }
 
   ul {
