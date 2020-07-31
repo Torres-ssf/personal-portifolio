@@ -21,7 +21,7 @@ export const Navbar = styled.nav`
 `;
 
 export const Logo = styled.a`
-  color: white;
+  color: #d5fff3;
   font-family: 'Satisfy', cursive;
   font-size: 1.8rem;
   letter-spacing: 3px;
@@ -36,7 +36,7 @@ export const SectionList = styled.ul`
     margin: 0 10px;
 
     a {
-      color: white;
+      color: #d5fff3;
       font-family: 'Big Shoulders Text', cursive;
       font-size: 1.4rem;
       letter-spacing: 3px;
