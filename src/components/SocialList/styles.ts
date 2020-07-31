@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  color: white;
+  color: #d5fff3;
   display: flex;
   flex-direction: column;
+  margin-top: 12px;
 
   h3 {
-    font-weight: 500;
+    color: #6184d8;
+    font-weight: 700;
     font-size: 1rem;
     line-height: 24px;
     text-transform: uppercase;
