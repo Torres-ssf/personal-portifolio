@@ -1,15 +1,53 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useMemo } from 'react';
 
 import Header from '../../components/Header';
 import SocialList from '../../components/SocialList';
+import Project from '../../components/Project';
 
-import { Container, PresentationContainer, Presentation } from './styles';
+import projectsData from '../../data/projects';
+
+import {
+  Container,
+  PresentationContainer,
+  Presentation,
+  ProjectSection,
+  SectionHeader,
+  ProjectContainer,
+} from './styles';
 
 const Portifolio: React.FC = () => {
   const [drawerOpened, serDrawerOpened] = useState(false);
 
   const handleDrawerOpen = useCallback(() => {
     serDrawerOpened(oldState => !oldState);
+  }, []);
+
+  const projects = useMemo(() => {
+    return projectsData.map(project => {
+      const {
+        id,
+        projectName,
+        projectDescription,
+        projectDetail,
+        stacksList,
+        liveLink,
+        githubLink,
+        backgroundUrl,
+      } = project;
+      return (
+        <Project
+          key={id}
+          id={project.id}
+          projectName={projectName}
+          projectDescription={projectDescription}
+          projectDetail={projectDetail}
+          stacksList={stacksList}
+          liveLink={liveLink}
+          githubLink={githubLink}
+          backgroundUrl={backgroundUrl}
+        />
+      );
+    });
   }, []);
 
   return (
@@ -29,6 +67,10 @@ const Portifolio: React.FC = () => {
           <SocialList />
         </Presentation>
       </PresentationContainer>
+      <ProjectSection>
+        <SectionHeader>Projects</SectionHeader>
+        <ProjectContainer>{projects}</ProjectContainer>
+      </ProjectSection>
     </Container>
   );
 };
