@@ -20,12 +20,13 @@ export const Presentation = styled.div`
     font-size: 4rem;
     line-height: 60px;
     letter-spacing: 0.37px;
+    margin-bottom: 28px;
   }
 
   p {
     font-size: 1.4rem;
     line-height: 28px;
-    margin-top: 12px;
+    margin-bottom: 28px;
   }
 `;
 
