@@ -7,7 +7,7 @@ export const Container = styled.div`
   margin-top: 12px;
 
   h3 {
-    color: #6184d8;
+    color: #3584cb;
     font-weight: 700;
     font-size: 1rem;
     line-height: 24px;
@@ -23,10 +23,9 @@ export const Container = styled.div`
     & + li {
       margin-left: 12px;
     }
-  }
 
-  img {
-    height: 24px;
-    width: 24px;
+    svg {
+      fill: #483d3f;
+    }
   }
 `;
