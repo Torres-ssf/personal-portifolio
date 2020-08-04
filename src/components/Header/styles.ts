@@ -77,7 +77,7 @@ export const DrawerContainer = styled.button`
   right: 11px;
   height: 50px;
   width: 50px;
-  z-index: 2;
+  z-index: 4;
 `;
 
 export const Drawer = styled.span`
@@ -122,12 +122,12 @@ export const OverlayContainer = styled.span`
   opacity: 0;
   position: absolute;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 3;
 `;
 
 export const Container = styled.header<HeaderProps>`
@@ -163,7 +163,7 @@ export const Container = styled.header<HeaderProps>`
       left: 0;
       right: 0;
       bottom: 0;
-      z-index: 2;
+      z-index: 4;
 
       li {
         margin: 30px 0 0 20px;
