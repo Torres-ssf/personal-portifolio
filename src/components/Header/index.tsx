@@ -1,7 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Container, Navbar, Logo, SectionList, Drawer } from './styles';
+import {
+  Container,
+  Navbar,
+  Logo,
+  SectionList,
+  OverlayContainer,
+  DrawerContainer,
+  Drawer,
+} from './styles';
 
 interface HeaderProps {
   drawerOpened: boolean;
@@ -24,8 +32,10 @@ const Header: React.FC<HeaderProps> = ({ drawerOpened, toggleDrawer }) => {
             <a href="/#contact">Contact</a>
           </li>
         </SectionList>
-
-        <Drawer onClick={toggleDrawer} />
+        <DrawerContainer onClick={toggleDrawer}>
+          <Drawer />
+        </DrawerContainer>
+        <OverlayContainer />
       </Navbar>
     </Container>
   );
