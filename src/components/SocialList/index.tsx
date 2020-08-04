@@ -1,8 +1,6 @@
 import React from 'react';
 
-import linkedin from '../../assets/icons/linkedin.svg';
-import twitter from '../../assets/icons/twitter.svg';
-import github from '../../assets/icons/github.svg';
+import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 import { Container } from './styles';
 
@@ -17,7 +15,7 @@ const SocialList: React.FC = () => {
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/torres-ssf/"
           >
-            <img src={linkedin} alt="linkedin" />
+            <FaLinkedin size={24} />
           </a>
         </li>
         <li>
@@ -26,7 +24,7 @@ const SocialList: React.FC = () => {
             rel="noopener noreferrer"
             href="https://twitter.com/torres_ssf"
           >
-            <img src={twitter} alt="twitter" />
+            <FaTwitter size={24} />
           </a>
         </li>
         <li>
@@ -35,7 +33,7 @@ const SocialList: React.FC = () => {
             rel="noopener noreferrer"
             href="https://github.com/Torres-ssf"
           >
-            <img src={github} alt="github" />
+            <FaGithub size={24} />
           </a>
         </li>
       </ul>
