@@ -4,7 +4,6 @@ export const Container = styled.div`
   color: #d5fff3;
   display: flex;
   flex-direction: column;
-  margin-top: 12px;
 
   h3 {
     color: #3584cb;
@@ -12,11 +11,11 @@ export const Container = styled.div`
     font-size: 1rem;
     line-height: 24px;
     text-transform: uppercase;
+    margin-bottom: 12px;
   }
 
   ul {
     display: flex;
-    margin-top: 14px;
   }
 
   li {
