@@ -3,8 +3,9 @@ import React, { useState, useCallback, useMemo } from 'react';
 import Header from '../../components/Header';
 import SocialList from '../../components/SocialList';
 import Project from '../../components/Project';
+import Terminal from '../../components/Terminal';
 
-import projectsData from '../../data/projects';
+import projectsData, { contactInfo } from '../../data/projects';
 
 import {
   Container,
@@ -50,6 +51,10 @@ const Portifolio: React.FC = () => {
     });
   }, []);
 
+  const { email, github, linkedin, twitter } = useMemo(() => {
+    return contactInfo;
+  }, []);
+
   return (
     <Container>
       <Header drawerOpened={drawerOpened} toggleDrawer={handleDrawerOpen} />
@@ -67,6 +72,12 @@ const Portifolio: React.FC = () => {
           <SocialList />
         </Presentation>
       </PresentationContainer>
+      <Terminal
+        email={email}
+        github={github}
+        twitter={twitter}
+        linkedin={linkedin}
+      />
       <ProjectSection>
         <SectionHeader>Projects</SectionHeader>
         <ProjectContainer>{projects}</ProjectContainer>
