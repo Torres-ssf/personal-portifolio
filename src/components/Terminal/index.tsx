@@ -1,7 +1,7 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState, useCallback } from 'react';
 import PropTypes from 'prop-types';
 
-import { Container, Header, Circle, Console } from './styles';
+import { Container, Header, Circle, Console, TopLayer } from './styles';
 
 interface TerminalProps {
   email: string;
@@ -16,6 +16,11 @@ const Terminal: React.FC<TerminalProps> = ({
   github,
   twitter,
 }) => {
+  const [currentLayer, setcurrentLayer] = useState(0);
+  const [layersAnimateState, setLayersAnimateState] = useState({});
+
+  const triggleLayerAnimation = useCallback(() => {}, []);
+
   const skills = useMemo(
     () =>
       "['React', 'React Native', 'Typescript', 'Node','Styled Components', 'HTML5', 'CSS3']",
@@ -73,15 +78,46 @@ const Terminal: React.FC<TerminalProps> = ({
         <Circle />
       </Header>
       <Console>
-        <p>dev.name</p>
+        <p>
+          <TopLayer
+            start
+            animationSteps={8}
+            onAnimationEnd={triggleLayerAnimation}
+          />
+          dev.name
+        </p>
         <p>&quot;Sérgio Torres&quot;</p>
-        <p>dev.skills</p>
+        <p>
+          <TopLayer
+            animationSteps={10}
+            onAnimationEnd={triggleLayerAnimation}
+          />
+          dev.skills
+        </p>
         <p>{skills}</p>
-        <p>dev.current</p>
+        <p>
+          <TopLayer
+            animationSteps={11}
+            onAnimationEnd={triggleLayerAnimation}
+          />
+          dev.current
+        </p>
         <p>{current}</p>
-        <p>dev.location</p>
+        <p>
+          <TopLayer
+            animationSteps={12}
+            onAnimationEnd={triggleLayerAnimation}
+          />
+          dev.location
+        </p>
         <p>&quot;Brazil&quot;</p>
-        <p>dev.contact</p>
+        <p>
+          <TopLayer
+            animationSteps={11}
+            onAnimationEnd={triggleLayerAnimation}
+          />
+          dev.contact
+        </p>
         <p>{contact}</p>
       </Console>
     </Container>
