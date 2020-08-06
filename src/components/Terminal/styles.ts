@@ -1,4 +1,31 @@
-import styled from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
+
+interface TopLayerProps {
+  start?: boolean;
+  animate?: boolean;
+  animationSteps: number;
+  animationEnded?: boolean;
+}
+
+const blink = keyframes`
+  0%, 49% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: white;
+  }
+`;
+
+const moving = keyframes`
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+`;
 
 export const Container = styled.span`
   display: block;
@@ -58,6 +85,7 @@ export const Console = styled.span`
     display: block;
     align-items: center;
     font-size: 1em;
+    letter-spacing: normal;
   }
 
   p:nth-child(odd) {
@@ -69,7 +97,7 @@ export const Console = styled.span`
 
     &::before {
       content: '> ';
-      margin-right: 8px;
+      /* margin-right: 8px; */
     }
   }
 
@@ -77,4 +105,33 @@ export const Console = styled.span`
     color: #ffba08;
     /* opacity: 0; */
   }
+`;
+
+export const TopLayer = styled.span<TopLayerProps>`
+${props =>
+  props.start &&
+  css`
+    animation: ${blink} 2 forwards linear;
+  `}
+
+  /* ${props =>
+    props.animate &&
+    css`
+      animation: ${moving} 800ms forwards steps(${props.animationSteps});
+    `}
+
+  ${props =>
+    props.animationEnded &&
+    css`
+      display: none;
+    `} */
+  border-left: 9px solid white;
+  background-color: #05668d;
+  display: block;
+  position: absolute;
+  width: calc(100% - 18px);
+  height: 22px;
+  top: 0;
+  left: 18px;
+  bottom: 0;
 `;
