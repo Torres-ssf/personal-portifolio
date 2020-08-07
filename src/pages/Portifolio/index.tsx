@@ -73,6 +73,7 @@ const Portifolio: React.FC = () => {
             I&apos;m a full stack developer passionate about beautifully
             designing and coding great user experiences.
           </p>
+          <h3>Let&apos;s connect</h3>
           <SocialList />
         </Presentation>
       </PresentationContainer>
