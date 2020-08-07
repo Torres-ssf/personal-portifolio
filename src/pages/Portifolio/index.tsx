@@ -89,17 +89,18 @@ const Portifolio: React.FC = () => {
       </ProjectSection>
       <Footer>
         <MessageMeContainer>
-          <h3 className="hello-heading">Say Hello!</h3>
-          <p className="hello-paragraph">
-            If you have an application you are interested in developing,a
+          <h3>Say Hello!</h3>
+          <p>
+            If you have an application you are interested in developing, a
             feature that you need built or a project that needs coding, I&apos;m
             your guy. I&apos;d love to help with it.
           </p>
-          <a href="mailto:sergio.uft@gmail.com" className="hello-link">
+          <a href="mailto:sergio.uft@gmail.com" style={{ marginTop: '32px' }}>
             Let&apos;s do this
           </a>
         </MessageMeContainer>
         <CodeMessage>while(!(succeed = try()))</CodeMessage>
+        <SocialList iconSize={32} iconColor="#fff" />
         <CopyrightParagraph>
           Made by Sergio Torres &copy; 2020
         </CopyrightParagraph>
