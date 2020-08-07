@@ -1,15 +1,29 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { shade } from 'polished';
 
-export const Container = styled.ul`
+interface ContainerProps {
+  iconColor: string;
+}
+
+export const Container = styled.ul<ContainerProps>`
   display: flex;
 
   li {
     & + li {
-      margin-left: 12px;
+      margin-left: 16px;
     }
 
     svg {
-      fill: #483d3f;
+      fill: ${props => props.iconColor};
+      transition: fill 300ms;
+
+      &:hover {
+        ${props => {
+          return css`
+            fill: ${shade(0.5, props.iconColor)};
+          `;
+        }}
+      }
     }
   }
 `;
