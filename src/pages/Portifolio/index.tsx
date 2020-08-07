@@ -16,6 +16,7 @@ import {
   ProjectContainer,
   Footer,
   MessageMeContainer,
+  CodeMessage,
 } from './styles';
 
 const Portifolio: React.FC = () => {
@@ -96,6 +97,7 @@ const Portifolio: React.FC = () => {
             Let&apos;s do this
           </a>
         </MessageMeContainer>
+        <CodeMessage>while(!(succeed = try()))</CodeMessage>
       </Footer>
     </Container>
   );
