@@ -8,11 +8,19 @@ interface Project {
   id: number;
   projectName: string;
   projectDescription: string;
+  projectDetail: string[];
   stacksList: string[];
   liveLink: string;
   githubLink: string;
   backgroundUrl: string;
 }
+
+export const contactInfo = {
+  email: 'sergio.uft@gmail.com',
+  github: 'https://github.com/Torres-ssf',
+  linkedin: 'https://www.linkedin.com/in/torres-ssf/',
+  twitter: 'https://twitter.com/torres_ssf',
+};
 
 const projects: Project[] = [
   {
@@ -20,6 +28,7 @@ const projects: Project[] = [
     projectName: 'Bookstore',
     projectDescription:
       'Bookstore created with React and Redux. The app allows users to add, edit, and delete books, as well as save reading progress. The app is integrated with an external API created with Ruby on Rails.',
+    projectDetail: ['Full Stack Dev', '2020'],
     stacksList: ['React', 'Redux', 'HTML', 'CSS'],
     liveLink: 'https://ssf-bookstore.netlify.com/',
     githubLink: 'https://github.com/Torres-ssf/react-bookstore',
@@ -29,6 +38,7 @@ const projects: Project[] = [
     id: 2,
     projectName: 'Calculator App',
     projectDescription: 'Calculator with basic operations created with React.',
+    projectDetail: ['Front End Dev', '2019'],
     stacksList: ['React', 'HTML', 'CSS'],
     liveLink: 'https://ssf-calculator.netlify.com/',
     githubLink: 'https://github.com/Torres-ssf/react-calculator',
@@ -39,6 +49,7 @@ const projects: Project[] = [
     projectName: 'Weather App',
     projectDescription:
       'A weather forecast app built using the weather API. Created with HTML, CSS and Javascript.',
+    projectDetail: ['Front End Dev', '2019'],
     stacksList: ['Javascript', 'HTML', 'CSS'],
     liveLink: 'https://ssf-weatherapp.netlify.com/',
     githubLink: 'https://github.com/Torres-ssf/javascript-weather-app',
@@ -49,6 +60,7 @@ const projects: Project[] = [
     projectName: 'Facebook Clone',
     projectDescription:
       "A Facebook clone created with Ruby on Rails. The app contains the core features found in Facebook's platform, such as the ability to send friend requests, create posts, and upload photos.",
+    projectDetail: ['Full Stack Dev', '2019'],
     stacksList: ['Rails', 'HTML', 'CSS'],
     liveLink: 'https://f-b-clone.herokuapp.com/',
     githubLink: 'https://github.com/Torres-ssf/facebook-clone',
@@ -59,6 +71,7 @@ const projects: Project[] = [
     projectName: 'Restaurant Page',
     projectDescription:
       'Dynamically-rendered restaurant page. Create with HTML, CSS and Javascript.',
+    projectDetail: ['Front End Dev', '2019'],
     stacksList: ['Javascript', 'HTML', 'CSS'],
     liveLink: 'https://ssf-sushiplace.netlify.com/',
     githubLink: 'https://github.com/Torres-ssf/javascript-restaurant-page',
