@@ -1,13 +1,7 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  color: #d5fff3;
+export const Container = styled.ul`
   display: flex;
-  flex-direction: column;
-
-  ul {
-    display: flex;
-  }
 
   li {
     & + li {
