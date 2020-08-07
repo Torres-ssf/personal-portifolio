@@ -14,6 +14,7 @@ import {
   ProjectSection,
   SectionHeader,
   ProjectContainer,
+  Footer,
 } from './styles';
 
 const Portifolio: React.FC = () => {
@@ -82,6 +83,7 @@ const Portifolio: React.FC = () => {
         <SectionHeader>Projects</SectionHeader>
         <ProjectContainer>{projects}</ProjectContainer>
       </ProjectSection>
+      <Footer />
     </Container>
   );
 };
