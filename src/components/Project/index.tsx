@@ -14,8 +14,6 @@ interface ProjectProps {
   id: number;
   projectName: string;
   projectDescription: string;
-  projectDetail: string[];
-  stacksList: string[];
   liveLink: string;
   githubLink: string;
   backgroundUrl: string;
@@ -25,8 +23,6 @@ const Project: React.FC<ProjectProps> = ({
   id,
   projectName,
   projectDescription,
-  projectDetail,
-  stacksList,
   liveLink,
   githubLink,
   backgroundUrl,
@@ -57,8 +53,6 @@ Project.propTypes = {
   id: PropTypes.number.isRequired,
   projectName: PropTypes.string.isRequired,
   projectDescription: PropTypes.string.isRequired,
-  projectDetail: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
-  stacksList: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
   liveLink: PropTypes.string.isRequired,
   githubLink: PropTypes.string.isRequired,
   backgroundUrl: PropTypes.string.isRequired,
