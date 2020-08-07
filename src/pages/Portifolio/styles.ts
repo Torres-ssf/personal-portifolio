@@ -58,3 +58,15 @@ export const ProjectSection = styled.section`
     }
   }
 `;
+
+export const Footer = styled.footer`
+  background-color: #483d3f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  width: 100%;
+`;
