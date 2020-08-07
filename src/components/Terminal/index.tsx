@@ -1,7 +1,15 @@
-import React, { useMemo, useState, useCallback } from 'react';
+import React, { useMemo, useState, useCallback, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-import { Container, Header, Circle, Console, TopLayer } from './styles';
+import {
+  Container,
+  Header,
+  Circle,
+  Console,
+  InputCode,
+  OutputCode,
+  TopLayer,
+} from './styles';
 
 interface TerminalProps {
   email: string;
@@ -16,10 +24,56 @@ const Terminal: React.FC<TerminalProps> = ({
   github,
   twitter,
 }) => {
-  const [currentLayer, setcurrentLayer] = useState(0);
-  const [layersAnimateState, setLayersAnimateState] = useState({});
+  const [startBlink, setStartBlink] = useState(false);
 
-  const triggleLayerAnimation = useCallback(() => {}, []);
+  const [animationState, setAnimationState] = useState([
+    { animate: false, animationEnded: false },
+    { animate: false, animationEnded: false },
+    { animate: false, animationEnded: false },
+    { animate: false, animationEnded: false },
+    { animate: false, animationEnded: false },
+  ]);
+
+  const [inputCodeVisible, setInputCodeVisible] = useState([
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+  ]);
+
+  useEffect(() => {
+    setStartBlink(true);
+  }, []);
+
+  const handleAnimationEnd = useCallback(
+    target => {
+      const id = parseInt(target.id, 10);
+      if (startBlink) {
+        setAnimationState(oldState => [
+          { animate: true, animationEnded: false },
+          ...oldState.slice(id + 1, oldState.length),
+        ]);
+
+        setStartBlink(false);
+      } else {
+        setAnimationState(oldState => [
+          ...oldState.slice(0, id),
+          { animate: false, animationEnded: true },
+          { animate: true, animationEnded: false },
+          ...oldState.slice(id + 2, oldState.length),
+        ]);
+
+        setInputCodeVisible(oldState => [
+          ...oldState.slice(0, id + 1),
+          true,
+          ...oldState.slice(id + 2, oldState.length),
+        ]);
+      }
+    },
+    [startBlink],
+  );
 
   const skills = useMemo(
     () =>
@@ -78,47 +132,75 @@ const Terminal: React.FC<TerminalProps> = ({
         <Circle />
       </Header>
       <Console>
-        <p>
+        <InputCode visible={inputCodeVisible[0]}>
           <TopLayer
-            start
+            startBlink={startBlink}
+            animate={animationState[0].animate}
+            animationEnded={animationState[0].animationEnded}
             animationSteps={8}
-            onAnimationEnd={triggleLayerAnimation}
+            onAnimationEnd={({ target }) => handleAnimationEnd(target)}
+            id="0"
           />
           dev.name
-        </p>
-        <p>&quot;Sérgio Torres&quot;</p>
-        <p>
+        </InputCode>
+        <OutputCode visible={animationState[0].animationEnded}>
+          &quot;Sérgio Torres&quot;
+        </OutputCode>
+        <InputCode visible={inputCodeVisible[1]}>
           <TopLayer
+            animate={animationState[1].animate}
+            animationEnded={animationState[1].animationEnded}
             animationSteps={10}
-            onAnimationEnd={triggleLayerAnimation}
+            onAnimationEnd={({ target }) => handleAnimationEnd(target)}
+            id="1"
           />
           dev.skills
-        </p>
-        <p>{skills}</p>
-        <p>
+        </InputCode>
+        <OutputCode visible={animationState[1].animationEnded}>
+          {skills}
+        </OutputCode>
+        <InputCode visible={inputCodeVisible[2]}>
           <TopLayer
+            animate={animationState[2].animate}
+            animationEnded={animationState[2].animationEnded}
             animationSteps={11}
-            onAnimationEnd={triggleLayerAnimation}
+            onAnimationEnd={({ target }) => handleAnimationEnd(target)}
+            id="2"
           />
           dev.current
-        </p>
-        <p>{current}</p>
-        <p>
+        </InputCode>
+        <OutputCode visible={animationState[2].animationEnded}>
+          {current}
+        </OutputCode>
+        <InputCode visible={inputCodeVisible[3]}>
           <TopLayer
+            animate={animationState[3].animate}
+            animationEnded={animationState[3].animationEnded}
             animationSteps={12}
-            onAnimationEnd={triggleLayerAnimation}
+            onAnimationEnd={({ target }) => handleAnimationEnd(target)}
+            id="3"
           />
           dev.location
-        </p>
-        <p>&quot;Brazil&quot;</p>
-        <p>
+        </InputCode>
+        <OutputCode visible={animationState[3].animationEnded}>
+          &quot;Brazil&quot;
+        </OutputCode>
+        <InputCode visible={inputCodeVisible[4]}>
           <TopLayer
+            animate={animationState[4].animate}
+            animationEnded={animationState[4].animationEnded}
             animationSteps={11}
-            onAnimationEnd={triggleLayerAnimation}
+            onAnimationEnd={({ target }) => handleAnimationEnd(target)}
+            id="4"
           />
           dev.contact
-        </p>
-        <p>{contact}</p>
+        </InputCode>
+        <OutputCode visible={animationState[4].animationEnded}>
+          {contact}
+        </OutputCode>
+        <InputCode visible={inputCodeVisible[5]}>
+          <TopLayer endBlink />
+        </InputCode>
       </Console>
     </Container>
   );
