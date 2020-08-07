@@ -7,7 +7,6 @@ import { Container } from './styles';
 const SocialList: React.FC = () => {
   return (
     <Container>
-      <h3>Let&apos;s connect</h3>
       <ul>
         <li>
           <a
