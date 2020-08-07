@@ -103,6 +103,12 @@ export const MessageMeContainer = styled.div`
   }
 `;
 
+export const CodeMessage = styled.p`
+  margin-top: 60px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 2rem;
+`;
+
 export const Footer = styled.footer`
   background-color: #483d3f;
   color: white;
@@ -111,7 +117,7 @@ export const Footer = styled.footer`
   position: relative;
   justify-content: center;
   align-items: center;
-  padding: 100px 0;
+  padding: 160px 0 100px;
   width: 100%;
 
   @media (max-width: 1250px) {
@@ -127,6 +133,8 @@ export const Footer = styled.footer`
   }
 
   @media (max-width: 850px) {
+    padding-top: 170px;
+
     ${MessageMeContainer} {
       width: calc(100% - 80px);
       height: 340px;
@@ -135,10 +143,16 @@ export const Footer = styled.footer`
   }
 
   @media (max-width: 700px) {
+    padding-top: 180px;
+
     ${MessageMeContainer} {
       width: calc(100% - 60px);
       height: 360px;
       top: -180px;
+    }
+
+    ${CodeMessage} {
+      font-size: 1.7rem;
     }
   }
 
@@ -148,12 +162,22 @@ export const Footer = styled.footer`
       text-align: center;
       width: 100%;
     }
+
+    ${CodeMessage} {
+      font-size: 1.5rem;
+    }
   }
 
   @media (max-width: 450px) {
+    padding-top: 200px;
+
     ${MessageMeContainer} {
       height: 400px;
       top: -200px;
+    }
+
+    ${CodeMessage} {
+      font-size: 1.3rem;
     }
   }
 `;
