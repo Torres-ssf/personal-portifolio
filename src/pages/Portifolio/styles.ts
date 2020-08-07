@@ -28,6 +28,15 @@ export const Presentation = styled.div`
     line-height: 28px;
     margin-bottom: 28px;
   }
+
+  h3 {
+    color: #3584cb;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
 `;
 
 export const ProjectContainer = styled.div`
