@@ -132,8 +132,12 @@ export const Footer = styled.footer`
   position: relative;
   justify-content: center;
   align-items: center;
-  padding: 160px 0 100px;
+  padding: 160px 0 70px;
   width: 100%;
+
+  ul {
+    margin-top: 30px;
+  }
 
   @media (max-width: 1250px) {
     ${MessageMeContainer} {
