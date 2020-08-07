@@ -17,6 +17,7 @@ import {
   Footer,
   MessageMeContainer,
   CodeMessage,
+  CopyrightParagraph,
 } from './styles';
 
 const Portifolio: React.FC = () => {
@@ -98,6 +99,9 @@ const Portifolio: React.FC = () => {
           </a>
         </MessageMeContainer>
         <CodeMessage>while(!(succeed = try()))</CodeMessage>
+        <CopyrightParagraph>
+          Made by Sergio Torres &copy; 2020
+        </CopyrightParagraph>
       </Footer>
     </Container>
   );
