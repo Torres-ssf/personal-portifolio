@@ -1,10 +1,19 @@
 import styled, { css, keyframes } from 'styled-components';
 
 interface TopLayerProps {
-  start?: boolean;
+  startBlink?: boolean;
   animate?: boolean;
-  animationSteps: number;
   animationEnded?: boolean;
+  animationSteps?: number;
+  endBlink?: boolean;
+}
+
+interface OutputCodeProps {
+  visible: boolean;
+}
+
+interface InputCodeProps {
+  visible: boolean;
 }
 
 const blink = keyframes`
@@ -70,7 +79,7 @@ export const Console = styled.span`
   border-right: 4px solid #8d8d92;
   border-bottom: 6px solid #8d8d92;
   display: block;
-  padding: 20px;
+  padding: 20px 20px 10px 20px;
   height: calc(100% - 30px);
   font-family: 'Source Code Pro', monospace;
   overflow: hidden;
@@ -79,42 +88,58 @@ export const Console = styled.span`
   a {
     color: #33a1fd;
   }
+`;
 
-  p {
-    margin-bottom: 22px;
-    display: block;
-    align-items: center;
-    font-size: 1em;
-    letter-spacing: normal;
-  }
+export const InputCode = styled.p<InputCodeProps>`
+  ${props =>
+    !props.visible &&
+    css`
+      visibility: hidden;
+    `}
+  margin-bottom: 22px;
+  align-items: center;
+  display: block;
+  font-size: 1em;
+  letter-spacing: normal;
+  color: white;
+  position: relative;
+  height: 30px;
+  width: fit-content;
 
-  p:nth-child(odd) {
-    color: white;
-    position: relative;
-    height: 30px;
-    width: fit-content;
-    /* opacity: 0; */
-
-    &::before {
-      content: '> ';
-      /* margin-right: 8px; */
-    }
-  }
-
-  p:nth-child(even) {
-    color: #ffba08;
-    /* opacity: 0; */
+  &::before {
+    content: '> ';
   }
 `;
 
-export const TopLayer = styled.span<TopLayerProps>`
-${props =>
-  props.start &&
-  css`
-    animation: ${blink} 2 forwards linear;
-  `}
+export const OutputCode = styled.p<OutputCodeProps>`
+  ${props =>
+    !props.visible &&
+    css`
+      visibility: hidden;
+    `}
 
-  /* ${props =>
+  margin-bottom: 22px;
+  align-items: center;
+  display: block;
+  font-size: 1em;
+  letter-spacing: normal;
+  color: #ffba08;
+`;
+
+export const TopLayer = styled.span<TopLayerProps>`
+  ${props =>
+    props.startBlink &&
+    css`
+      animation: ${blink} 1s forwards linear 2;
+    `}
+
+  ${props =>
+    props.endBlink &&
+    css`
+      animation: ${blink} 1s forwards linear infinite;
+    `}
+
+  ${props =>
     props.animate &&
     css`
       animation: ${moving} 800ms forwards steps(${props.animationSteps});
@@ -123,8 +148,9 @@ ${props =>
   ${props =>
     props.animationEnded &&
     css`
-      display: none;
-    `} */
+      visibility: hidden;
+    `}
+
   border-left: 9px solid white;
   background-color: #05668d;
   display: block;
