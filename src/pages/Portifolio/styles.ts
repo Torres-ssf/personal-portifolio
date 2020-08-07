@@ -109,6 +109,12 @@ export const CodeMessage = styled.p`
   font-size: 2rem;
 `;
 
+export const CopyrightParagraph = styled.p`
+  bottom: 20px;
+  font-size: 0.96rem;
+  position: absolute;
+`;
+
 export const Footer = styled.footer`
   background-color: #483d3f;
   color: white;
