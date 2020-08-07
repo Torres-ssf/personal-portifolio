@@ -58,13 +58,15 @@ export const SectionHeader = styled.h3`
 
 export const ProjectSection = styled.section`
   text-align: center;
-  margin: 50px auto 120px;
+  margin: 50px auto 180px;
   max-width: 1300px;
 
-  @media (max-width: 1000px) {
-    ${ProjectContainer} {
-      margin-bottom: 160px;
-    }
+  @media (max-width: 850px) {
+    margin-bottom: 190px;
+  }
+
+  @media (max-width: 550px) {
+    margin-bottom: 210px;
   }
 `;
 
