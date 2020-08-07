@@ -5,15 +5,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  h3 {
-    color: #3584cb;
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-  }
-
   ul {
     display: flex;
   }
