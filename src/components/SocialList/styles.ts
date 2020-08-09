@@ -1,30 +1,29 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { shade } from 'polished';
 
-export const Container = styled.div`
-  color: #d5fff3;
+interface ContainerProps {
+  iconColor: string;
+}
+
+export const Container = styled.ul<ContainerProps>`
   display: flex;
-  flex-direction: column;
-
-  h3 {
-    color: #3584cb;
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-  }
-
-  ul {
-    display: flex;
-  }
 
   li {
     & + li {
-      margin-left: 12px;
+      margin-left: 16px;
     }
 
     svg {
-      fill: #483d3f;
+      fill: ${props => props.iconColor};
+      transition: fill 300ms;
+
+      &:hover {
+        ${props => {
+          return css`
+            fill: ${shade(0.5, props.iconColor)};
+          `;
+        }}
+      }
     }
   }
 `;

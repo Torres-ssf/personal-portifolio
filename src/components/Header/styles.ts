@@ -64,6 +64,11 @@ export const SectionList = styled.ul`
       font-size: 1.4rem;
       letter-spacing: 3px;
       text-transform: uppercase;
+      transition: color 300ms;
+
+      &:hover {
+        color: #33a1fd;
+      }
     }
   }
 `;

@@ -14,6 +14,10 @@ import {
   ProjectSection,
   SectionHeader,
   ProjectContainer,
+  Footer,
+  MessageMeContainer,
+  CodeMessage,
+  CopyrightParagraph,
 } from './styles';
 
 const Portifolio: React.FC = () => {
@@ -29,20 +33,16 @@ const Portifolio: React.FC = () => {
         id,
         projectName,
         projectDescription,
-        projectDetail,
-        stacksList,
         liveLink,
         githubLink,
         backgroundUrl,
       } = project;
       return (
         <Project
+          id={id}
           key={id}
-          id={project.id}
           projectName={projectName}
           projectDescription={projectDescription}
-          projectDetail={projectDetail}
-          stacksList={stacksList}
           liveLink={liveLink}
           githubLink={githubLink}
           backgroundUrl={backgroundUrl}
@@ -69,7 +69,8 @@ const Portifolio: React.FC = () => {
             I&apos;m a full stack developer passionate about beautifully
             designing and coding great user experiences.
           </p>
-          <SocialList />
+          <h3>Let&apos;s connect</h3>
+          <SocialList iconSize={28} iconColor="#24668D" />
         </Presentation>
       </PresentationContainer>
       <Terminal
@@ -82,6 +83,24 @@ const Portifolio: React.FC = () => {
         <SectionHeader>Projects</SectionHeader>
         <ProjectContainer>{projects}</ProjectContainer>
       </ProjectSection>
+      <Footer>
+        <MessageMeContainer>
+          <h3>Say Hello!</h3>
+          <p>
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding, I&apos;m
+            your guy. I&apos;d love to help with it.
+          </p>
+          <a href="mailto:sergio.uft@gmail.com" style={{ marginTop: '32px' }}>
+            Let&apos;s do this
+          </a>
+        </MessageMeContainer>
+        <CodeMessage>while(!(succeed = try()))</CodeMessage>
+        <SocialList iconSize={32} iconColor="#fff" />
+        <CopyrightParagraph>
+          Made by Sergio Torres &copy; 2020
+        </CopyrightParagraph>
+      </Footer>
     </Container>
   );
 };

@@ -40,6 +40,14 @@ export const Container = styled.span`
   display: block;
   margin: 40px auto 0;
   max-width: 920px;
+
+  @media (max-width: 960px) {
+    margin: 40px 20px;
+  }
+
+  @media (max-width: 500px) {
+    margin: 40px 5px;
+  }
 `;
 
 export const Header = styled.span`
