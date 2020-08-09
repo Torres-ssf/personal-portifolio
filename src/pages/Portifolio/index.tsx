@@ -33,20 +33,16 @@ const Portifolio: React.FC = () => {
         id,
         projectName,
         projectDescription,
-        projectDetail,
-        stacksList,
         liveLink,
         githubLink,
         backgroundUrl,
       } = project;
       return (
         <Project
+          id={id}
           key={id}
-          id={project.id}
           projectName={projectName}
           projectDescription={projectDescription}
-          projectDetail={projectDetail}
-          stacksList={stacksList}
           liveLink={liveLink}
           githubLink={githubLink}
           backgroundUrl={backgroundUrl}
@@ -74,7 +70,7 @@ const Portifolio: React.FC = () => {
             designing and coding great user experiences.
           </p>
           <h3>Let&apos;s connect</h3>
-          <SocialList />
+          <SocialList iconSize={28} iconColor="#24668D" />
         </Presentation>
       </PresentationContainer>
       <Terminal
