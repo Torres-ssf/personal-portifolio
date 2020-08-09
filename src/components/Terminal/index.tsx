@@ -77,7 +77,7 @@ const Terminal: React.FC<TerminalProps> = ({
 
   const skills = useMemo(
     () =>
-      "['React', 'React Native', 'Typescript', 'Node','Styled Components', 'HTML5', 'CSS3']",
+      "['React', 'React Native', 'Typescript', 'Node','Styled Components', 'Jest', 'TypeORM', 'SOLID', 'Postgres', 'Docker']",
     [],
   );
 
