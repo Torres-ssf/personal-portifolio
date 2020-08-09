@@ -12,7 +12,7 @@ export const PresentationContainer = styled.section`
 export const Presentation = styled.div`
   display: flex;
   flex-direction: column;
-  padding-top: 120px;
+  padding-top: 90px;
   margin: 0 auto;
   max-width: 920px;
 
@@ -30,12 +30,30 @@ export const Presentation = styled.div`
   }
 
   h3 {
-    color: #3584cb;
-    font-weight: 700;
+    color: #33a1fd;
+    font-weight: 500;
     font-size: 1rem;
     line-height: 24px;
     text-transform: uppercase;
     margin-bottom: 12px;
+  }
+
+  @media (max-width: 960px) {
+    margin: 0 20px;
+  }
+
+  @media (max-width: 700px) {
+    h1 {
+      font-size: 3.2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    margin: 0 5px;
   }
 `;
 
