@@ -4,8 +4,16 @@ import Header from '../../components/Header';
 import SocialList from '../../components/SocialList';
 import Project from '../../components/Project';
 import Terminal from '../../components/Terminal';
+import SkillContainer from '../../components/SkillContainer';
 
-import projectsData, { contactInfo } from '../../data/projects';
+import resume from '../../assets/resume.pdf';
+
+import projectsData, {
+  contactInfo,
+  developmentSkills,
+  softSkills,
+  toolsSkills,
+} from '../../data/projects';
 
 import {
   Container,
@@ -14,6 +22,10 @@ import {
   ProjectSection,
   SectionHeader,
   ProjectContainer,
+  AboutSection,
+  AboutMeContainer,
+  SkillsContainer,
+  DownloadLink,
   Footer,
   MessageMeContainer,
   CodeMessage,
@@ -22,10 +34,20 @@ import {
 
 const Portifolio: React.FC = () => {
   const [drawerOpened, serDrawerOpened] = useState(false);
+  const [skillContainerOpened, setSkillContainerOpened] = useState(0);
 
   const handleDrawerOpen = useCallback(() => {
     serDrawerOpened(oldState => !oldState);
   }, []);
+
+  const handleSkillContainerButtonClick = useCallback(
+    (containerNum: number) => {
+      setSkillContainerOpened(oldState =>
+        oldState === containerNum ? 0 : containerNum,
+      );
+    },
+    [],
+  );
 
   const projects = useMemo(() => {
     return projectsData.map(project => {
@@ -51,7 +73,7 @@ const Portifolio: React.FC = () => {
     });
   }, []);
 
-  const { email, github, linkedin, twitter } = useMemo(() => {
+  const { email, github, linkedin, angelList, twitter } = useMemo(() => {
     return contactInfo;
   }, []);
 
@@ -70,20 +92,78 @@ const Portifolio: React.FC = () => {
             designing and coding great user experiences.
           </p>
           <h3>Let&apos;s connect</h3>
-          <SocialList iconSize={28} iconColor="#24668D" />
+          <SocialList
+            github={github}
+            twitter={twitter}
+            angelList={angelList}
+            linkedin={linkedin}
+            iconSize={28}
+          />
         </Presentation>
       </PresentationContainer>
       <Terminal
         email={email}
         github={github}
         twitter={twitter}
+        angelList={angelList}
         linkedin={linkedin}
       />
-      <ProjectSection>
+      <ProjectSection id="projects">
         <SectionHeader>Projects</SectionHeader>
         <ProjectContainer>{projects}</ProjectContainer>
       </ProjectSection>
-      <Footer>
+      <AboutSection>
+        <AboutMeContainer id="about">
+          <SectionHeader>About Me</SectionHeader>
+          <p>
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding, I&apos;m
+            your guy. I&apos;d love to help with it.
+          </p>
+          <footer>
+            <h3>Let&apos;s connect</h3>
+            <SocialList
+              github={github}
+              twitter={twitter}
+              angelList={angelList}
+              linkedin={linkedin}
+              iconSize={28}
+            />
+            <DownloadLink
+              target="_blank"
+              rel="noopener noreferrer"
+              href={resume}
+            >
+              Get My Resume
+            </DownloadLink>
+          </footer>
+        </AboutMeContainer>
+        <SkillsContainer id="skills">
+          <SectionHeader>Skills</SectionHeader>
+          <SkillContainer
+            title="Development"
+            opened={skillContainerOpened === 1}
+            containerNum={1}
+            skillsList={developmentSkills}
+            handleSkillButtonClick={handleSkillContainerButtonClick}
+          />
+          <SkillContainer
+            title="Soft-Skills"
+            opened={skillContainerOpened === 2}
+            containerNum={2}
+            skillsList={softSkills}
+            handleSkillButtonClick={handleSkillContainerButtonClick}
+          />
+          <SkillContainer
+            title="Tools & Methods"
+            opened={skillContainerOpened === 3}
+            containerNum={3}
+            skillsList={toolsSkills}
+            handleSkillButtonClick={handleSkillContainerButtonClick}
+          />
+        </SkillsContainer>
+      </AboutSection>
+      <Footer id="contact">
         <MessageMeContainer>
           <h3>Say Hello!</h3>
           <p>
@@ -96,7 +176,14 @@ const Portifolio: React.FC = () => {
           </a>
         </MessageMeContainer>
         <CodeMessage>while(!(succeed = try()))</CodeMessage>
-        <SocialList iconSize={32} iconColor="#fff" />
+        <SocialList
+          github={github}
+          twitter={twitter}
+          angelList={angelList}
+          linkedin={linkedin}
+          iconSize={32}
+          iconColor="#fff"
+        />
         <CopyrightParagraph>
           Made by Sergio Torres &copy; 2020
         </CopyrightParagraph>
