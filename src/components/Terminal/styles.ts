@@ -95,6 +95,10 @@ export const Console = styled.span`
 
   a {
     color: #33a1fd;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `;
 
