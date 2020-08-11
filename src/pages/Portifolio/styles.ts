@@ -76,16 +76,8 @@ export const SectionHeader = styled.h3`
 
 export const ProjectSection = styled.section`
   text-align: center;
-  margin: 50px auto 180px;
+  margin: 50px auto;
   max-width: 1300px;
-
-  @media (max-width: 850px) {
-    margin-bottom: 190px;
-  }
-
-  @media (max-width: 550px) {
-    margin-bottom: 210px;
-  }
 `;
 
 export const MessageMeContainer = styled.div`
@@ -144,7 +136,117 @@ export const CopyrightParagraph = styled.p`
   position: absolute;
 `;
 
+export const AboutMeContainer = styled.div`
+  text-align: left;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+
+  p {
+    color: #666666;
+    font-size: 1.2rem;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  h3 {
+    align-self: center;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 450px) {
+      flex-direction: column;
+      justify-content: left;
+      align-items: unset;
+    }
+
+    h3 {
+      align-self: unset;
+      color: #33a1fd;
+      flex-basis: 100%;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+  }
+
+  @media (max-width: 500px) {
+    margin: 0 5px;
+  }
+`;
+
+export const SkillsContainer = styled.div`
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0 20px;
+
+  h3:first-of-type {
+    align-self: center;
+  }
+
+  @media (max-width: 500px) {
+    margin: 0 5px;
+  }
+`;
+
+export const AboutSection = styled.section`
+  margin: 0 auto 40px;
+  max-width: 1300px;
+  text-align: center;
+  display: flex;
+
+  @media (max-width: 1000px) {
+    flex-wrap: wrap;
+
+    ${AboutMeContainer} {
+      flex-basis: 100%;
+    }
+
+    ${SkillsContainer} {
+      margin-top: 50px;
+    }
+  }
+`;
+
+export const DownloadLink = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #50b0fd;
+  border-radius: 5px;
+  background-color: #50b0fd;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 1rem;
+  margin-left: auto;
+  height: 40px;
+  text-transform: uppercase;
+  width: 200px;
+  transition: 250ms;
+
+  &:hover {
+    background-color: #fff;
+    border-color: #50b0fd;
+    color: #50b0fd;
+  }
+
+  @media (max-width: 450px) {
+    margin: 20px 0 0;
+  }
+`;
+
 export const Footer = styled.footer`
+  margin-top: 250px;
   background-color: #483d3f;
   color: white;
   display: flex;
