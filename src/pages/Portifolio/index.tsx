@@ -91,14 +91,23 @@ const Portifolio: React.FC = () => {
             I&apos;m a full stack developer passionate about beautifully
             designing and coding great user experiences.
           </p>
-          <h3>Let&apos;s connect</h3>
-          <SocialList
-            github={github}
-            twitter={twitter}
-            angelList={angelList}
-            linkedin={linkedin}
-            iconSize={28}
-          />
+          <div>
+            <h3>Let&apos;s connect</h3>
+            <SocialList
+              github={github}
+              twitter={twitter}
+              angelList={angelList}
+              linkedin={linkedin}
+              iconSize={28}
+            />
+            <DownloadLink
+              target="_blank"
+              rel="noopener noreferrer"
+              href={resume}
+            >
+              Get My Resume
+            </DownloadLink>
+          </div>
         </Presentation>
       </PresentationContainer>
       <Terminal
@@ -120,7 +129,7 @@ const Portifolio: React.FC = () => {
             feature that you need built or a project that needs coding, I&apos;m
             your guy. I&apos;d love to help with it.
           </p>
-          <footer>
+          <div>
             <h3>Let&apos;s connect</h3>
             <SocialList
               github={github}
@@ -136,7 +145,7 @@ const Portifolio: React.FC = () => {
             >
               Get My Resume
             </DownloadLink>
-          </footer>
+          </div>
         </AboutMeContainer>
         <SkillsContainer id="skills">
           <SectionHeader>Skills</SectionHeader>
