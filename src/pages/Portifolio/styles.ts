@@ -16,6 +16,10 @@ export const Presentation = styled.div`
   margin: 0 auto;
   max-width: 920px;
 
+  @media (max-width: 550px) {
+    text-align: center;
+  }
+
   h1 {
     font-size: 4rem;
     line-height: 60px;
@@ -29,13 +33,26 @@ export const Presentation = styled.div`
     margin-bottom: 28px;
   }
 
-  h3 {
-    color: #33a1fd;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
+  div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 550px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h3 {
+      align-self: unset;
+      color: #33a1fd;
+      flex-basis: 100%;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
   }
 
   @media (max-width: 960px) {
@@ -143,6 +160,10 @@ export const AboutMeContainer = styled.div`
   flex-direction: column;
   margin: 0 20px;
 
+  @media (max-width: 550px) {
+    text-align: center;
+  }
+
   p {
     color: #666666;
     font-size: 1.2rem;
@@ -154,15 +175,15 @@ export const AboutMeContainer = styled.div`
     align-self: center;
   }
 
-  footer {
+  div {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 
-    @media (max-width: 450px) {
+    @media (max-width: 550px) {
       flex-direction: column;
-      justify-content: left;
-      align-items: unset;
+      justify-content: center;
+      margin-top: 30px;
     }
 
     h3 {
@@ -240,7 +261,7 @@ export const DownloadLink = styled.a`
     color: #50b0fd;
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 550px) {
     margin: 20px 0 0;
   }
 `;
