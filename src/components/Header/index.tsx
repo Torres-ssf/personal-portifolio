@@ -23,16 +23,24 @@ const Header: React.FC<HeaderProps> = ({ drawerOpened, toggleDrawer }) => {
         <Logo href="/">Sérgio Torres</Logo>
         <SectionList>
           <li>
-            <a href="/#projects">Projects</a>
+            <a href="/#projects" onClick={toggleDrawer}>
+              Projects
+            </a>
           </li>
           <li>
-            <a href="/#about">About</a>
+            <a href="/#about" onClick={toggleDrawer}>
+              About
+            </a>
           </li>
           <li>
-            <a href="/#skills">Skills</a>
+            <a href="/#skills" onClick={toggleDrawer}>
+              Skills
+            </a>
           </li>
           <li>
-            <a href="/#contact">Contact</a>
+            <a href="/#contact" onClick={toggleDrawer}>
+              Contact
+            </a>
           </li>
         </SectionList>
         <DrawerContainer onClick={toggleDrawer}>
