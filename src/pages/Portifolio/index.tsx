@@ -20,6 +20,7 @@ import {
   PresentationContainer,
   Presentation,
   ProjectSection,
+  NavigationPlaceholder,
   SectionHeader,
   ProjectContainer,
   AboutSection,
@@ -117,12 +118,14 @@ const Portifolio: React.FC = () => {
         angelList={angelList}
         linkedin={linkedin}
       />
-      <ProjectSection id="projects">
+      <ProjectSection>
+        <NavigationPlaceholder id="projects" />
         <SectionHeader>Projects</SectionHeader>
         <ProjectContainer>{projects}</ProjectContainer>
       </ProjectSection>
       <AboutSection>
-        <AboutMeContainer id="about">
+        <AboutMeContainer>
+          <NavigationPlaceholder id="about" />
           <SectionHeader>About Me</SectionHeader>
           <p>
             If you have an application you are interested in developing, a
@@ -147,7 +150,8 @@ const Portifolio: React.FC = () => {
             </DownloadLink>
           </div>
         </AboutMeContainer>
-        <SkillsContainer id="skills">
+        <SkillsContainer>
+          <NavigationPlaceholder id="skills" />
           <SectionHeader>Skills</SectionHeader>
           <SkillContainer
             title="Development"
