@@ -1,8 +1,6 @@
 import React, { useMemo, useState, useCallback, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-import resume from '../../assets/resume.pdf';
-
 import {
   Container,
   Header,
