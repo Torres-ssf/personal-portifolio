@@ -7,6 +7,7 @@ export const Container = styled.main`
 export const PresentationContainer = styled.section`
   color: #666;
   width: 100%;
+  padding-top: 50px;
 `;
 
 export const Presentation = styled.div`
