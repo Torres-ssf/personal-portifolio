@@ -93,9 +93,16 @@ export const SectionHeader = styled.h3`
 `;
 
 export const ProjectSection = styled.section`
+  position: relative;
   text-align: center;
   margin: 50px auto;
   max-width: 1300px;
+`;
+
+export const NavigationPlaceholder = styled.span`
+  position: absolute;
+  visibility: hidden;
+  top: -100px;
 `;
 
 export const MessageMeContainer = styled.div`
@@ -155,6 +162,7 @@ export const CopyrightParagraph = styled.p`
 `;
 
 export const AboutMeContainer = styled.div`
+  position: relative;
   text-align: left;
   flex: 1;
   display: flex;
@@ -205,6 +213,7 @@ export const AboutMeContainer = styled.div`
 `;
 
 export const SkillsContainer = styled.div`
+  position: relative;
   text-align: left;
   display: flex;
   flex-direction: column;
