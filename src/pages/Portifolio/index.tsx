@@ -89,8 +89,12 @@ const Portifolio: React.FC = () => {
             Glad to meet you!
           </h1>
           <p>
-            I&apos;m a full stack developer passionate about beautifully
-            designing and coding great user experiences.
+            I&apos;m a full stack developer with a diverse set of skills,
+            ranging from design with React + Styled Components, all the way to
+            development with Node + Express + Postgres + MongoDB. I want to help
+            you build a product, feature or website. Look through some of my
+            work and experience! If you like what you see and have a project you
+            need coded, don&apos;t hesitate to contact me.
           </p>
           <div>
             <h3>Let&apos;s connect</h3>
@@ -128,9 +132,12 @@ const Portifolio: React.FC = () => {
           <NavigationPlaceholder id="about" />
           <SectionHeader>About Me</SectionHeader>
           <p>
-            If you have an application you are interested in developing, a
-            feature that you need built or a project that needs coding, I&apos;m
-            your guy. I&apos;d love to help with it.
+            I am a simple guy who loves to spend time fixing broken things. When
+            I&apos;m not coding, it&apos;s very likely that I am outside hiking
+            trails or playing at my Ps4. My passions include, programming,
+            coffee, visiting new places, hiking, cooking, cats, and spending
+            time with family and friends. I&apos;m also passionate about
+            beautifully designing and coding great user experiences.
           </p>
           <div>
             <h3>Let&apos;s connect</h3>
