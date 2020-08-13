@@ -29,7 +29,7 @@ export const Presentation = styled.div`
   }
 
   p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 28px;
     margin-bottom: 28px;
   }
@@ -150,7 +150,7 @@ export const MessageMeContainer = styled.div`
 `;
 
 export const CodeMessage = styled.p`
-  margin-top: 60px;
+  margin: 80px 0 0;
   font-family: 'Source Code Pro', monospace;
   font-size: 2rem;
 `;
@@ -175,7 +175,7 @@ export const AboutMeContainer = styled.div`
 
   p {
     color: #666666;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 24px;
     margin: 0;
   }
@@ -289,7 +289,7 @@ export const Footer = styled.footer`
   width: 100%;
 
   ul {
-    margin-top: 30px;
+    margin: 60px 0 30px;
   }
 
   @media (max-width: 1250px) {
