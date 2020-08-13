@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 
 import {
@@ -17,28 +17,34 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ drawerOpened, toggleDrawer }) => {
+  const handleSectionClick = useCallback(() => {
+    if (drawerOpened) {
+      toggleDrawer();
+    }
+  }, [drawerOpened, toggleDrawer]);
+
   return (
     <Container drawerOpened={drawerOpened}>
       <Navbar>
         <Logo href="/">Sérgio Torres</Logo>
         <SectionList>
           <li>
-            <a href="/#projects" onClick={toggleDrawer}>
+            <a href="/#projects" onClick={handleSectionClick}>
               Projects
             </a>
           </li>
           <li>
-            <a href="/#about" onClick={toggleDrawer}>
+            <a href="/#about" onClick={handleSectionClick}>
               About
             </a>
           </li>
           <li>
-            <a href="/#skills" onClick={toggleDrawer}>
+            <a href="/#skills" onClick={handleSectionClick}>
               Skills
             </a>
           </li>
           <li>
-            <a href="/#contact" onClick={toggleDrawer}>
+            <a href="/#contact" onClick={handleSectionClick}>
               Contact
             </a>
           </li>
