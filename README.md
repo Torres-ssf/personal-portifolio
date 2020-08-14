@@ -43,15 +43,10 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@Torres-ssf](https://github.com/Torres-ssf)
+- Linkedin: [torres-ssf](https://www.linkedin.com/in/torres-ssf/)
+- AngelList: [torres-ssf](https://angel.co/u/torres-ssf/)
+- Twitter: [@torres_ssf](https://twitter.com/torres_ssf)
 
 ## 🤝 Contributing
 
