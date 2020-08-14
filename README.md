@@ -42,24 +42,20 @@
 
 My personal portifolio.
 
-## Built With
+## Live
 
-- Major languages,
-- frameworks,screenshot
-- technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
+Click [ here ](https://www.torres-ssf.com/) for a live version of the app.
 
 
-## Getting Started
+### Built With
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+The project was built using the following languages stacks:
 
-
-To get a local copy up and running follow these simple example steps.
+- [React](https://github.com/facebook/react)
+- Typescript
+- [Styled-Components](https://styled-components.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Polished](https://github.com/styled-components/polished)
 
 ### Prerequisites
 
