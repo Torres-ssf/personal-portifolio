@@ -38,7 +38,7 @@
 
 ## About The Project
 
-![](./src/assets/terminal.gif)
+![](./src/assets/screenshots/home.png)
 
 My personal portifolio.
 
