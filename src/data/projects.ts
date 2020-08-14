@@ -16,10 +16,11 @@ interface Project {
 }
 
 export const contactInfo = {
-  email: 'sergio.uft@gmail.com',
   github: 'https://github.com/Torres-ssf',
   linkedin: 'https://www.linkedin.com/in/torres-ssf/',
+  angelList: 'https://angel.co/u/torres-ssf',
   twitter: 'https://twitter.com/torres_ssf',
+  email: 'sergio.uft@gmail.com',
 };
 
 const projects: Project[] = [
@@ -77,6 +78,49 @@ const projects: Project[] = [
     githubLink: 'https://github.com/Torres-ssf/javascript-restaurant-page',
     backgroundUrl: restaurant,
   },
+];
+
+export const developmentSkills = [
+  'React',
+  'React Native',
+  'Typescript',
+  'Node',
+  'Styled Components',
+  'Redux',
+  'Jest',
+  'Postgres',
+  'TypeORM',
+  'MongoDB',
+  'SASS',
+  'Docker',
+];
+
+export const softSkills = [
+  'Communication',
+  'Teamwork',
+  'Problem Solving',
+  'Time Management',
+  'Mentoring',
+  'Interpersonal Skills',
+  'Attention to Detail',
+  'Pair Programming',
+  'Collaborative Problem Solving',
+];
+
+export const toolsSkills = [
+  'Git',
+  'Github',
+  'TDD',
+  'OOP',
+  'SOLID',
+  'REST API',
+  'Mobile Design',
+  'Design Patterns',
+  'Responsive Web Design',
+  'Netlify',
+  'Heroku',
+  'Single Page Applications',
+  'User Experience',
 ];
 
 export default projects;

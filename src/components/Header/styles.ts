@@ -137,7 +137,10 @@ export const OverlayContainer = styled.span`
 
 export const Container = styled.header<HeaderProps>`
   background-color: #483d3f;
+  position: fixed;
+  top: 0;
   height: 72px;
+  z-index: 3;
   width: 100%;
 
   @media (max-width: 750px) {

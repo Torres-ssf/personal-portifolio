@@ -15,6 +15,7 @@ interface TerminalProps {
   email: string;
   linkedin: string;
   github: string;
+  angelList: string;
   twitter: string;
 }
 
@@ -22,6 +23,7 @@ const Terminal: React.FC<TerminalProps> = ({
   email,
   linkedin,
   github,
+  angelList,
   twitter,
 }) => {
   const [startBlink, setStartBlink] = useState(false);
@@ -84,14 +86,14 @@ const Terminal: React.FC<TerminalProps> = ({
   const current = useMemo(
     () => (
       <>
-        &quot;Technical Support Engineer and Practice Session Coordinator at
+        &quot;Technical Support Engineer and Practice Session Coordinator
+        at&nbsp;
         <a
-          className="ter-link"
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.microverse.org/"
         >
-          &nbsp;Microverse
+          Microverse
         </a>
         &quot;
       </>
@@ -104,10 +106,6 @@ const Terminal: React.FC<TerminalProps> = ({
     return (
       <>
         [ &quot;
-        <a target="_blank" rel="noopener noreferrer" href={mailTo}>
-          Email
-        </a>
-        &quot;, &quot;
         <a target="_blank" rel="noopener noreferrer" href={linkedin}>
           Linkedin
         </a>
@@ -116,13 +114,21 @@ const Terminal: React.FC<TerminalProps> = ({
           Github
         </a>
         &quot;, &quot;
+        <a target="_blank" rel="noopener noreferrer" href={angelList}>
+          AngelList
+        </a>
+        &quot;, &quot;
         <a target="_blank" rel="noopener noreferrer" href={twitter}>
           Twitter
+        </a>
+        &quot;, &quot;
+        <a target="_blank" rel="noopener noreferrer" href={mailTo}>
+          Email
         </a>
         &quot; ]
       </>
     );
-  }, [email, linkedin, github, twitter]);
+  }, [email, linkedin, github, angelList, twitter]);
 
   return (
     <Container>
@@ -209,6 +215,7 @@ const Terminal: React.FC<TerminalProps> = ({
 Terminal.propTypes = {
   email: PropTypes.string.isRequired,
   linkedin: PropTypes.string.isRequired,
+  angelList: PropTypes.string.isRequired,
   github: PropTypes.string.isRequired,
   twitter: PropTypes.string.isRequired,
 };

@@ -8,9 +8,17 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     -webkit-font-smoothing: antialiased;
     font-family: Ubuntu, sans-serif;
+  }
+
+  button {
+    cursor: pointer;
   }
 
   ul {
