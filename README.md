@@ -16,16 +16,36 @@
   </p>
 </p>
 
-> One paragraph statement about the project.
+<!-- TABLE OF CONTENTS -->
 
-![screenshot](./app_screenshot.png)
+## Table of Contents
 
-Additional description about the project and its features.
+- [About the Project](#about-the-project)
+  - [Live Demo](#live-demo)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Deployment](#Deployment)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+![](./src/assets/terminal.gif)
+
+My personal portifolio.
 
 ## Built With
 
 - Major languages,
-- frameworks,
+- frameworks,screenshot
 - technologies used
 
 ## Live Demo
