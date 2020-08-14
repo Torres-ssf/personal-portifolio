@@ -16,8 +16,6 @@
     <a href="https://www.torres-ssf.com/">View Page</a>
     ·
     <a href="https://github.com/Torres-ssf/personal-portifolio/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/Torres-ssf/personal-portifolio/issues">Request Feature</a>
   </p>
 </p>
 
@@ -26,7 +24,7 @@
 ## Table of Contents
 
 - [About the Project](#about-the-project)
-  - [Live Demo](#live-demo)
+  - [Live Version](#live)
   - [Built With](#built-with)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -133,7 +131,7 @@ Give a ⭐️ if you like this project!
 
 This project is [MIT](lic.url) licensed.
 
-[contributors-shield]: https://img.shields.io/github/forks/Torres-ssf/personal-portifolio.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/Torres-ssf/personal-portifolio.svg?style=flat-square
 [contributors-url]: https://github.com/Torres-ssf/personal-portifolio/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/Torres-ssf/personal-portifolio.svg?style=flat-square
 [forks-url]: https://github.com/Torres-ssf/personal-portifolio/network/members
