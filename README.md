@@ -1,4 +1,20 @@
-# Project Name
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+    <img src="src/assets/name_logo.png" alt="Logo" width="80" height="80">
+
+  <h3 align="center">Portifolio</h3>
+
+  <p align="center">
+    My personal portifolio
+    <br />
+    <a href="https://www.torres-ssf.com/">View Page</a>
+    ·
+    <a href="https://github.com/Torres-ssf/personal-portifolio/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Torres-ssf/personal-portifolio/issues">Request Feature</a>
+  </p>
+</p>
 
 > One paragraph statement about the project.
 
