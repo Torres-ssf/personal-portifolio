@@ -57,19 +57,52 @@ The project was built using the following languages stacks:
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [Polished](https://github.com/styled-components/polished)
 
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
 ### Prerequisites
 
-### Setup
+- Git
+- Node
+- NPM
 
-### Install
+### Installation
 
-### Usage
+1. Clone the repo
 
-### Run tests
+```sh
+git clone https://github.com/Torres-ssf/personal-portifolio/
+```
 
-### Deployment
+2. CD into the project root directory
 
+```sh
+cd personal-portifolio/
+```
 
+3. Install npm packages
+
+```sh
+yarn
+```
+
+## Usage
+
+### Used scripts
+
+In the project directory, you can run:
+
+```JS
+yarn start
+```
+Runs the app in the development mode.<br />
+
+```JS
+http//localhost:3000
+```
 
 ## Authors
 
@@ -82,19 +115,17 @@ The project was built using the following languages stacks:
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-Feel free to check the [issues page](issues/).
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/NewAwesomeFeature`)
+3. Commit your Changes (`git commit -m 'Add some NewAmazingFeature'`)
+4. Push to the Branch (`git push origin feature/NewAmazingFeature`)
+5. Open a Pull Request
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
