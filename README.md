@@ -1,3 +1,8 @@
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -26,13 +31,10 @@
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-  - [Deployment](#Deployment)
 - [Usage](#usage)
-- [Roadmap](#roadmap)
+- [Authors](#authors)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 <!-- ABOUT THE PROJECT -->
 
@@ -118,9 +120,9 @@ http//localhost:3000
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/NewAwesomeFeature`)
-3. Commit your Changes (`git commit -m 'Add some NewAmazingFeature'`)
-4. Push to the Branch (`git push origin feature/NewAmazingFeature`)
+2. Create your Feature Branch (`git checkout -b feature/NewFeature`)
+3. Commit your Changes (`git commit -m 'Add some NewFeature'`)
+4. Push to the Branch (`git push origin feature/NewFeature`)
 5. Open a Pull Request
 
 ## Show your support
@@ -130,3 +132,12 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](lic.url) licensed.
+
+[contributors-shield]: https://img.shields.io/github/forks/Torres-ssf/personal-portifolio.svg?style=flat-square
+[contributors-url]: https://github.com/Torres-ssf/personal-portifolio/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Torres-ssf/personal-portifolio.svg?style=flat-square
+[forks-url]: https://github.com/Torres-ssf/personal-portifolio/network/members
+[stars-shield]: https://img.shields.io/github/stars/Torres-ssf/personal-portifolio.svg?style=flat-square
+[stars-url]: https://github.com/Torres-ssf/personal-portifolio/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Torres-ssf/personal-portifolio.svg?style=flat-square
+[issues-url]: https://github.com/Torres-ssf/personal-portifolio/issues
