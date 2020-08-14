@@ -81,7 +81,7 @@ const Portifolio: React.FC = () => {
   return (
     <Container>
       <Header drawerOpened={drawerOpened} toggleDrawer={handleDrawerOpen} />
-      <PresentationContainer>
+      <PresentationContainer id="home">
         <Presentation>
           <h1>
             I&apos;m Sérgio
