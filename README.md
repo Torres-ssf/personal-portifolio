@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <img src="src/assets/name_logo.png" alt="Logo" width="80" height="80">
+    <img src="src/assets/logo_name.png" alt="Logo" width="80" height="80">
 
   <h3 align="center">Portifolio</h3>
 
