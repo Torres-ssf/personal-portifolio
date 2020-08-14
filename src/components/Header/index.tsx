@@ -26,7 +26,7 @@ const Header: React.FC<HeaderProps> = ({ drawerOpened, toggleDrawer }) => {
   return (
     <Container drawerOpened={drawerOpened}>
       <Navbar>
-        <Logo href="/">Sérgio Torres</Logo>
+        <Logo href="#home">Sérgio Torres</Logo>
         <SectionList>
           <li>
             <a href="/#projects" onClick={handleSectionClick}>
