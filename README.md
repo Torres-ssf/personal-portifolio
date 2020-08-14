@@ -129,7 +129,7 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [MIT](LICENSE.md) licensed.
 
 [contributors-shield]: https://img.shields.io/github/contributors/Torres-ssf/personal-portifolio.svg?style=flat-square
 [contributors-url]: https://github.com/Torres-ssf/personal-portifolio/graphs/contributors
