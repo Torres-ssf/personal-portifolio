@@ -1,74 +1,141 @@
-# Project Name
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
 
-> One paragraph statement about the project.
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+    <img src="src/assets/logo_name.png" alt="Logo" width="80" height="80">
 
-![screenshot](./app_screenshot.png)
+  <h3 align="center">Portifolio</h3>
 
-Additional description about the project and its features.
+  <p align="center">
+    My personal portifolio
+    <br />
+    <a href="https://www.torres-ssf.com/">View Page</a>
+    ·
+    <a href="https://github.com/Torres-ssf/personal-portifolio/issues">Report Bug</a>
+  </p>
+</p>
 
-## Built With
+<!-- TABLE OF CONTENTS -->
 
-- Major languages,
-- frameworks,
-- technologies used
+## Table of Contents
 
-## Live Demo
+- [About the Project](#about-the-project)
+  - [Live Version](#live)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Authors](#authors)
+- [Contributing](#contributing)
+- [License](#license)
 
-[Live Demo Link](https://livedemo.com)
+<!-- ABOUT THE PROJECT -->
 
+## About The Project
+
+![](./src/assets/screenshots/home.png)
+
+My personal portifolio.
+
+## Live
+
+Click [ here ](https://www.torres-ssf.com/) for a live version of the app.
+
+
+### Built With
+
+The project was built using the following languages stacks:
+
+- [React](https://github.com/facebook/react)
+- Typescript
+- [Styled-Components](https://styled-components.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Polished](https://github.com/styled-components/polished)
+
+<!-- GETTING STARTED -->
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-### Setup
+- Git
+- Node
+- NPM
 
-### Install
+### Installation
 
-### Usage
+1. Clone the repo
 
-### Run tests
+```sh
+git clone https://github.com/Torres-ssf/personal-portifolio/
+```
 
-### Deployment
+2. CD into the project root directory
 
+```sh
+cd personal-portifolio/
+```
 
+3. Install npm packages
+
+```sh
+yarn
+```
+
+## Usage
+
+### Used scripts
+
+In the project directory, you can run:
+
+```JS
+yarn start
+```
+Runs the app in the development mode.<br />
+
+```JS
+http//localhost:3000
+```
 
 ## Authors
 
 👤 **Author1**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@Torres-ssf](https://github.com/Torres-ssf)
+- Linkedin: [torres-ssf](https://www.linkedin.com/in/torres-ssf/)
+- AngelList: [torres-ssf](https://angel.co/u/torres-ssf/)
+- Twitter: [@torres_ssf](https://twitter.com/torres_ssf)
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-Feel free to check the [issues page](issues/).
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/NewFeature`)
+3. Commit your Changes (`git commit -m 'Add some NewFeature'`)
+4. Push to the Branch (`git push origin feature/NewFeature`)
+5. Open a Pull Request
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
 ## 📝 License
 
 This project is [MIT](lic.url) licensed.
+
+[contributors-shield]: https://img.shields.io/github/contributors/Torres-ssf/personal-portifolio.svg?style=flat-square
+[contributors-url]: https://github.com/Torres-ssf/personal-portifolio/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Torres-ssf/personal-portifolio.svg?style=flat-square
+[forks-url]: https://github.com/Torres-ssf/personal-portifolio/network/members
+[stars-shield]: https://img.shields.io/github/stars/Torres-ssf/personal-portifolio.svg?style=flat-square
+[stars-url]: https://github.com/Torres-ssf/personal-portifolio/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Torres-ssf/personal-portifolio.svg?style=flat-square
+[issues-url]: https://github.com/Torres-ssf/personal-portifolio/issues
