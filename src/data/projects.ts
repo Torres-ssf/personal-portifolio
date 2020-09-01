@@ -3,13 +3,12 @@ import calc from '../assets/screenshots/calculator.png';
 import weather from '../assets/screenshots/weather.png';
 import facebook from '../assets/screenshots/facebook.png';
 import restaurant from '../assets/screenshots/restaurant.png';
+import gobarberweb from '../assets/screenshots/gobarberweb.png';
 
 interface Project {
   id: number;
   projectName: string;
   projectDescription: string;
-  projectDetail: string[];
-  stacksList: string[];
   liveLink: string;
   githubLink: string;
   backgroundUrl: string;
@@ -26,11 +25,18 @@ export const contactInfo = {
 const projects: Project[] = [
   {
     id: 1,
+    projectName: 'Gobarber Web',
+    projectDescription:
+      'The web version of GoBarber, an application for service providers, such as barbers, to control customers schedules. The application was build with React, Typescript and Styled-Components.',
+    liveLink: 'https://gobarber.torres-ssf.com/',
+    githubLink: 'https://github.com/Torres-ssf/gobarber-web',
+    backgroundUrl: gobarberweb,
+  },
+  {
+    id: 1,
     projectName: 'Bookstore',
     projectDescription:
       'Bookstore created with React and Redux. The app allows users to add, edit, and delete books, as well as save reading progress. The app is integrated with an external API created with Ruby on Rails.',
-    projectDetail: ['Full Stack Dev', '2020'],
-    stacksList: ['React', 'Redux', 'HTML', 'CSS'],
     liveLink: 'https://ssf-bookstore.netlify.com/',
     githubLink: 'https://github.com/Torres-ssf/react-bookstore',
     backgroundUrl: book,
@@ -39,8 +45,6 @@ const projects: Project[] = [
     id: 2,
     projectName: 'Calculator App',
     projectDescription: 'Calculator with basic operations created with React.',
-    projectDetail: ['Front End Dev', '2019'],
-    stacksList: ['React', 'HTML', 'CSS'],
     liveLink: 'https://ssf-calculator.netlify.com/',
     githubLink: 'https://github.com/Torres-ssf/react-calculator',
     backgroundUrl: calc,
@@ -50,8 +54,6 @@ const projects: Project[] = [
     projectName: 'Weather App',
     projectDescription:
       'A weather forecast app built using the weather API. Created with HTML, CSS and Javascript.',
-    projectDetail: ['Front End Dev', '2019'],
-    stacksList: ['Javascript', 'HTML', 'CSS'],
     liveLink: 'https://ssf-weatherapp.netlify.com/',
     githubLink: 'https://github.com/Torres-ssf/javascript-weather-app',
     backgroundUrl: weather,
@@ -61,8 +63,6 @@ const projects: Project[] = [
     projectName: 'Facebook Clone',
     projectDescription:
       "A Facebook clone created with Ruby on Rails. The app contains the core features found in Facebook's platform, such as the ability to send friend requests, create posts, and upload photos.",
-    projectDetail: ['Full Stack Dev', '2019'],
-    stacksList: ['Rails', 'HTML', 'CSS'],
     liveLink: 'https://f-b-clone.herokuapp.com/',
     githubLink: 'https://github.com/Torres-ssf/facebook-clone',
     backgroundUrl: facebook,
@@ -72,8 +72,6 @@ const projects: Project[] = [
     projectName: 'Restaurant Page',
     projectDescription:
       'Dynamically-rendered restaurant page. Create with HTML, CSS and Javascript.',
-    projectDetail: ['Front End Dev', '2019'],
-    stacksList: ['Javascript', 'HTML', 'CSS'],
     liveLink: 'https://ssf-sushiplace.netlify.com/',
     githubLink: 'https://github.com/Torres-ssf/javascript-restaurant-page',
     backgroundUrl: restaurant,
