@@ -92,6 +92,8 @@ export const developmentSkills = [
   'TypeORM',
   'MongoDB',
   'SASS',
+  'AWS SES',
+  'AWS S3',
   'Docker',
 ];
 
