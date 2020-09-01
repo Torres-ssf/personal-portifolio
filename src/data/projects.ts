@@ -1,3 +1,5 @@
+import { v4 } from 'uuid';
+
 import book from '../assets/screenshots/book.png';
 import calc from '../assets/screenshots/calculator.png';
 import weather from '../assets/screenshots/weather.png';
@@ -6,7 +8,7 @@ import gobarberweb from '../assets/screenshots/gobarberweb.png';
 import gobarberapi from '../assets/screenshots/gobarberapi.png';
 
 interface Project {
-  id: number;
+  id: string;
   projectName: string;
   projectDescription: string;
   liveLink: string;
@@ -24,7 +26,7 @@ export const contactInfo = {
 
 const projects: Project[] = [
   {
-    id: 1,
+    id: v4(),
     projectName: 'Gobarber Web',
     projectDescription:
       'The web version of GoBarber, an application for service providers, such as barbers, to control customers schedules. The application was build with React, Typescript and Styled-Components.',
@@ -33,7 +35,7 @@ const projects: Project[] = [
     backgroundUrl: gobarberweb,
   },
   {
-    id: 1,
+    id: v4(),
     projectName: 'Gobarber API',
     projectDescription:
       'Sever-side application for GoBarber, an application for service providers, such as barbers, to control customer schedules. The application was build with Node, Typescript, Express, TypeORM, Postgres, MongoDB,Redis, AWS SES, AWS S3.',
@@ -42,7 +44,7 @@ const projects: Project[] = [
     backgroundUrl: gobarberapi,
   },
   {
-    id: 1,
+    id: v4(),
     projectName: 'Bookstore',
     projectDescription:
       'Bookstore created with React and Redux. The app allows users to add, edit, and delete books, as well as save reading progress. The app is integrated with an external API created with Ruby on Rails.',
@@ -51,7 +53,7 @@ const projects: Project[] = [
     backgroundUrl: book,
   },
   {
-    id: 2,
+    id: v4(),
     projectName: 'Calculator App',
     projectDescription: 'Calculator with basic operations created with React.',
     liveLink: 'https://ssf-calculator.netlify.com/',
@@ -59,7 +61,7 @@ const projects: Project[] = [
     backgroundUrl: calc,
   },
   {
-    id: 3,
+    id: v4(),
     projectName: 'Weather App',
     projectDescription:
       'A weather forecast app built using the weather API. Created with HTML, CSS and Javascript.',
@@ -68,7 +70,7 @@ const projects: Project[] = [
     backgroundUrl: weather,
   },
   {
-    id: 5,
+    id: v4(),
     projectName: 'Restaurant Page',
     projectDescription:
       'Dynamically-rendered restaurant page. Create with HTML, CSS and Javascript.',
