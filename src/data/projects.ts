@@ -1,9 +1,9 @@
 import book from '../assets/screenshots/book.png';
 import calc from '../assets/screenshots/calculator.png';
 import weather from '../assets/screenshots/weather.png';
-import facebook from '../assets/screenshots/facebook.png';
 import restaurant from '../assets/screenshots/restaurant.png';
 import gobarberweb from '../assets/screenshots/gobarberweb.png';
+import gobarberapi from '../assets/screenshots/gobarberapi.png';
 
 interface Project {
   id: number;
@@ -34,6 +34,15 @@ const projects: Project[] = [
   },
   {
     id: 1,
+    projectName: 'Gobarber API',
+    projectDescription:
+      'Sever-side application for GoBarber, an application for service providers, such as barbers, to control customer schedules. The application was build with Node, Typescript, Express, TypeORM, Postgres, MongoDB,Redis, AWS SES, AWS S3.',
+    liveLink: 'https://api.gobarber.torres-ssf.com/documentation',
+    githubLink: 'https://github.com/Torres-ssf/gobarber-backend',
+    backgroundUrl: gobarberapi,
+  },
+  {
+    id: 1,
     projectName: 'Bookstore',
     projectDescription:
       'Bookstore created with React and Redux. The app allows users to add, edit, and delete books, as well as save reading progress. The app is integrated with an external API created with Ruby on Rails.',
@@ -57,15 +66,6 @@ const projects: Project[] = [
     liveLink: 'https://ssf-weatherapp.netlify.com/',
     githubLink: 'https://github.com/Torres-ssf/javascript-weather-app',
     backgroundUrl: weather,
-  },
-  {
-    id: 4,
-    projectName: 'Facebook Clone',
-    projectDescription:
-      "A Facebook clone created with Ruby on Rails. The app contains the core features found in Facebook's platform, such as the ability to send friend requests, create posts, and upload photos.",
-    liveLink: 'https://f-b-clone.herokuapp.com/',
-    githubLink: 'https://github.com/Torres-ssf/facebook-clone',
-    backgroundUrl: facebook,
   },
   {
     id: 5,
