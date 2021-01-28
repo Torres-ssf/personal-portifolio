@@ -90,11 +90,11 @@ const Portifolio: React.FC = () => {
           </h1>
           <p>
             I&apos;m a full stack developer with a diverse set of skills,
-            ranging from design with React + Styled Components, all the way to
-            development with Node + Express + Postgres + MongoDB. I want to help
-            you build a product, feature or website. Look through some of my
-            work and experience! If you like what you see and have a project you
-            need coded, don&apos;t hesitate to contact me.
+            ranging from React + Redux + Styled Components, all the way to
+            NodeJS + Express + Postgres/MongoDB. I want to be part of your team
+            and help your product and business to skyrocket. Look through some
+            of my work and experience! If you like what you see don&apos;t
+            hesitate to contact me.
           </p>
           <div>
             <h3>Let&apos;s connect</h3>

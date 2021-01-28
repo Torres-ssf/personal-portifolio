@@ -6,12 +6,13 @@ import weather from '../assets/screenshots/weather.png';
 import restaurant from '../assets/screenshots/restaurant.png';
 import gobarberweb from '../assets/screenshots/gobarberweb.png';
 import gobarberapi from '../assets/screenshots/gobarberapi.png';
+import shortster from '../assets/screenshots/shortster.png';
 
 interface Project {
   id: string;
   projectName: string;
   projectDescription: string;
-  liveLink: string;
+  liveLink?: string;
   githubLink: string;
   backgroundUrl: string;
 }
@@ -25,6 +26,14 @@ export const contactInfo = {
 };
 
 const projects: Project[] = [
+  {
+    id: v4(),
+    projectName: 'Shortster API',
+    projectDescription:
+      'This project is a RESTful API with the functionality to create URL Shortsters, a short code to replace URL long links. The application was implemented with NodeJS, Typescript, Express, and Postgres. I followed TDD and used Package by Feature to organized the project. ',
+    githubLink: 'https://github.com/Torres-ssf/shortster-api',
+    backgroundUrl: shortster,
+  },
   {
     id: v4(),
     projectName: 'Gobarber Web',
@@ -90,11 +99,11 @@ export const developmentSkills = [
   'Jest',
   'Postgres',
   'TypeORM',
+  'Docker',
   'MongoDB',
   'SASS',
   'AWS SES',
   'AWS S3',
-  'Docker',
 ];
 
 export const softSkills = [
