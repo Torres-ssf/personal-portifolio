@@ -14,7 +14,7 @@ interface ProjectProps {
   id: string;
   projectName: string;
   projectDescription: string;
-  liveLink: string;
+  liveLink?: string;
   githubLink: string;
   backgroundUrl: string;
 }
@@ -34,9 +34,11 @@ const Project: React.FC<ProjectProps> = ({
           <FaGithub size={24} />
           Source code
         </a>
-        <a href={liveLink} target="_blank" rel="noopener noreferrer">
-          Live preview
-        </a>
+        {liveLink && (
+          <a href={liveLink} target="_blank" rel="noopener noreferrer">
+            Live preview
+          </a>
+        )}
       </Header>
       <ScreenshotContainer>
         <img src={backgroundUrl} alt={`${projectName} screenshot`} />
