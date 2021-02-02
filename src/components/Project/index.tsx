@@ -11,7 +11,6 @@ import {
 } from './style';
 
 interface ProjectProps {
-  id: string;
   projectName: string;
   projectDescription: string;
   liveLink?: string;
@@ -20,7 +19,6 @@ interface ProjectProps {
 }
 
 const Project: React.FC<ProjectProps> = ({
-  id,
   projectName,
   projectDescription,
   liveLink,
@@ -52,10 +50,9 @@ const Project: React.FC<ProjectProps> = ({
 };
 
 Project.propTypes = {
-  id: PropTypes.string.isRequired,
   projectName: PropTypes.string.isRequired,
   projectDescription: PropTypes.string.isRequired,
-  liveLink: PropTypes.string.isRequired,
+  liveLink: PropTypes.string,
   githubLink: PropTypes.string.isRequired,
   backgroundUrl: PropTypes.string.isRequired,
 };
