@@ -52,7 +52,7 @@ const Project: React.FC<ProjectProps> = ({
 Project.propTypes = {
   projectName: PropTypes.string.isRequired,
   projectDescription: PropTypes.string.isRequired,
-  liveLink: PropTypes.string.isRequired,
+  liveLink: PropTypes.string,
   githubLink: PropTypes.string.isRequired,
   backgroundUrl: PropTypes.string.isRequired,
 };
