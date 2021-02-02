@@ -2,6 +2,7 @@ import book from '../assets/screenshots/book.png';
 import calc from '../assets/screenshots/calculator.png';
 import weather from '../assets/screenshots/weather.png';
 import restaurant from '../assets/screenshots/restaurant.png';
+import movieapp from '../assets/screenshots/movieapp.png';
 import gobarberweb from '../assets/screenshots/gobarberweb.png';
 import gobarberapi from '../assets/screenshots/gobarberapi.png';
 import shortster from '../assets/screenshots/shortster.png';
@@ -45,6 +46,14 @@ const projects: Project[] = [
     liveLink: 'https://api.gobarber.torres-ssf.com/documentation',
     githubLink: 'https://github.com/Torres-ssf/gobarber-backend',
     backgroundUrl: gobarberapi,
+  },
+  {
+    projectName: 'Movie App',
+    projectDescription:
+      'A webpage that consumes The Movie Database API to display information about movies. The implementation of this project is divided into the following Milestones. This application was implemented with React + Styled Components. It will also use Redux in a future milestone.',
+    liveLink: 'https://movieapp.torres-ssf.com/',
+    githubLink: 'https://github.com/Torres-ssf/movie-app',
+    backgroundUrl: movieapp,
   },
   {
     projectName: 'Bookstore',
