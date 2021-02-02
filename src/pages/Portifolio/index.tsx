@@ -53,7 +53,6 @@ const Portifolio: React.FC = () => {
   const projects = useMemo(() => {
     return projectsData.map(project => {
       const {
-        id,
         projectName,
         projectDescription,
         liveLink,
@@ -62,8 +61,7 @@ const Portifolio: React.FC = () => {
       } = project;
       return (
         <Project
-          id={id}
-          key={id}
+          key={projectName}
           projectName={projectName}
           projectDescription={projectDescription}
           liveLink={liveLink}
