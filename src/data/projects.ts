@@ -34,7 +34,7 @@ const projects: Project[] = [
   {
     projectName: 'Gobarber Web',
     projectDescription:
-      'The web version of GoBarber, an application for service providers, such as barbers, to control customers schedules. The application was build with React, Typescript and Styled-Components.',
+      'The web version of GoBarber. The application was built with React, Typescript and Styled-Components.',
     liveLink: 'https://gobarber.torres-ssf.com/',
     githubLink: 'https://github.com/Torres-ssf/gobarber-web',
     backgroundUrl: gobarberweb,
@@ -42,8 +42,8 @@ const projects: Project[] = [
   {
     projectName: 'Gobarber API',
     projectDescription:
-      'Sever-side application for GoBarber, an application for service providers, such as barbers, to control customer schedules. The application was build with Node, Typescript, Express, TypeORM, Postgres, MongoDB,Redis, AWS SES, AWS S3.',
-    liveLink: 'https://api.gobarber.torres-ssf.com/documentation',
+      'Sever-side application for GoBarber. The application was built with NodeJs, Typescript, Express, TypeORM, Postgres,Redis, AWS SES, AWS S3.',
+    liveLink: 'https://gobarber-api-torres.herokuapp.com/documentation/',
     githubLink: 'https://github.com/Torres-ssf/gobarber-backend',
     backgroundUrl: gobarberapi,
   },

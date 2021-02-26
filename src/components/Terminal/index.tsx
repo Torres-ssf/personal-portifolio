@@ -24,7 +24,6 @@ const Terminal: React.FC<TerminalProps> = ({
   linkedin,
   github,
   angelList,
-  twitter,
 }) => {
   const [startBlink, setStartBlink] = useState(false);
 
@@ -79,7 +78,7 @@ const Terminal: React.FC<TerminalProps> = ({
 
   const skills = useMemo(
     () =>
-      "['React', 'React Native', 'Typescript', 'Node','Styled Components', 'TypeORM', 'SOLID', 'Postgres', 'AWS SES', 'AWS S3', 'Jest', 'Docker']",
+      "['NodeJS', 'Typescript', 'Express', 'Postgres', 'MongoDB', 'React', 'React Native', 'Docker', 'Styled Components', 'Jest', 'TypeORM', 'AWS']",
     [],
   );
 
@@ -118,17 +117,13 @@ const Terminal: React.FC<TerminalProps> = ({
           AngelList
         </a>
         &quot;, &quot;
-        <a target="_blank" rel="noopener noreferrer" href={twitter}>
-          Twitter
-        </a>
-        &quot;, &quot;
         <a target="_blank" rel="noopener noreferrer" href={mailTo}>
           Email
         </a>
         &quot; ]
       </>
     );
-  }, [email, linkedin, github, angelList, twitter]);
+  }, [email, linkedin, github, angelList]);
 
   return (
     <Container>
@@ -217,7 +212,6 @@ Terminal.propTypes = {
   linkedin: PropTypes.string.isRequired,
   angelList: PropTypes.string.isRequired,
   github: PropTypes.string.isRequired,
-  twitter: PropTypes.string.isRequired,
 };
 
 export default Terminal;

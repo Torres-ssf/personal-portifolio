@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FaGithub, FaTwitter, FaLinkedin, FaAngellist } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaAngellist } from 'react-icons/fa';
 
 import { Container } from './styles';
 
@@ -19,7 +19,6 @@ const SocialList: React.FC<SocialListProps> = ({
   linkedin,
   github,
   angelList,
-  twitter,
 }) => {
   return (
     <Container iconColor={iconColor}>
@@ -38,11 +37,6 @@ const SocialList: React.FC<SocialListProps> = ({
           <FaGithub size={iconSize} />
         </a>
       </li>
-      <li>
-        <a target="_blank" rel="noopener noreferrer" href={twitter}>
-          <FaTwitter size={iconSize} />
-        </a>
-      </li>
     </Container>
   );
 };
@@ -53,7 +47,6 @@ SocialList.propTypes = {
   linkedin: PropTypes.string.isRequired,
   angelList: PropTypes.string.isRequired,
   github: PropTypes.string.isRequired,
-  twitter: PropTypes.string.isRequired,
 };
 
 export default SocialList;
