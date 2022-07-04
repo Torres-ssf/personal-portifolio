@@ -78,21 +78,20 @@ const Terminal: React.FC<TerminalProps> = ({
 
   const skills = useMemo(
     () =>
-      "['NodeJS', 'Typescript', 'Express', 'Postgres', 'MongoDB', 'React', 'React Native', 'Docker', 'Styled Components', 'Jest', 'TypeORM', 'AWS']",
+      "['NodeJS', 'Typescript', 'Express', 'Postgres', 'MongoDB', 'React', 'React Native', 'Docker', 'Styled Components', 'Jest', 'Mocha', 'TypeORM', 'AWS']",
     [],
   );
 
   const current = useMemo(
     () => (
       <>
-        &quot;Technical Support Engineer and Practice Session Coordinator
-        at&nbsp;
+        &quot;Backend Engineer at&nbsp;
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.microverse.org/"
+          href="https://aluna.social/"
         >
-          Microverse
+          Aluna.Social
         </a>
         &quot;
       </>
