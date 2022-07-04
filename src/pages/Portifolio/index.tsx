@@ -1,36 +1,33 @@
-import React, { useState, useCallback, useMemo } from 'react';
-
-import Header from '../../components/Header';
-import SocialList from '../../components/SocialList';
-import Project from '../../components/Project';
-import Terminal from '../../components/Terminal';
-import SkillContainer from '../../components/SkillContainer';
+import React, { useCallback, useMemo, useState } from 'react';
 
 import resume from '../../assets/resume.pdf';
-
+import Header from '../../components/Header';
+import Project from '../../components/Project';
+import SkillContainer from '../../components/SkillContainer';
+import SocialList from '../../components/SocialList';
+import Terminal from '../../components/Terminal';
 import projectsData, {
   contactInfo,
   developmentSkills,
   softSkills,
   toolsSkills,
 } from '../../data/projects';
-
 import {
-  Container,
-  PresentationContainer,
-  Presentation,
-  ProjectSection,
-  NavigationPlaceholder,
-  SectionHeader,
-  ProjectContainer,
-  AboutSection,
   AboutMeContainer,
-  SkillsContainer,
+  AboutSection,
+  CodeMessage,
+  Container,
+  CopyrightParagraph,
   DownloadLink,
   Footer,
   MessageMeContainer,
-  CodeMessage,
-  CopyrightParagraph,
+  NavigationPlaceholder,
+  Presentation,
+  PresentationContainer,
+  ProjectContainer,
+  ProjectSection,
+  SectionHeader,
+  SkillsContainer,
 } from './styles';
 
 const Portifolio: React.FC = () => {
@@ -149,6 +146,7 @@ const Portifolio: React.FC = () => {
             <DownloadLink
               target="_blank"
               rel="noopener noreferrer"
+              download="myResume"
               href={resume}
             >
               Get My Resume
