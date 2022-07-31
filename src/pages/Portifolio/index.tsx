@@ -69,7 +69,7 @@ const Portifolio: React.FC = () => {
     });
   }, []);
 
-  const { email, github, linkedin, angelList, twitter } = useMemo(() => {
+  const { email, github, linkedin, angelList } = useMemo(() => {
     return contactInfo;
   }, []);
 
@@ -84,18 +84,14 @@ const Portifolio: React.FC = () => {
             Glad to meet you!
           </h1>
           <p>
-            I&apos;m a full stack developer with a diverse set of skills,
-            ranging from React + Redux + Styled Components, all the way to
-            NodeJS + Express + Postgres/MongoDB. I want to be part of your team
-            and help your product and business to skyrocket. Look through some
-            of my work and experience! If you like what you see don&apos;t
-            hesitate to contact me.
+            Software Engineer with a love for clean code and fixing broken
+            things. Fluent in multiple languages, frameworks, and technologies,
+            and capable of ramping up quickly and efficiently.
           </p>
           <div>
             <h3>Let&apos;s connect</h3>
             <SocialList
               github={github}
-              twitter={twitter}
               angelList={angelList}
               linkedin={linkedin}
               iconSize={28}
@@ -113,7 +109,6 @@ const Portifolio: React.FC = () => {
       <Terminal
         email={email}
         github={github}
-        twitter={twitter}
         angelList={angelList}
         linkedin={linkedin}
       />
@@ -138,7 +133,6 @@ const Portifolio: React.FC = () => {
             <h3>Let&apos;s connect</h3>
             <SocialList
               github={github}
-              twitter={twitter}
               angelList={angelList}
               linkedin={linkedin}
               iconSize={28}
@@ -194,7 +188,6 @@ const Portifolio: React.FC = () => {
         <CodeMessage>while(!(succeed = try()))</CodeMessage>
         <SocialList
           github={github}
-          twitter={twitter}
           angelList={angelList}
           linkedin={linkedin}
           iconSize={32}
