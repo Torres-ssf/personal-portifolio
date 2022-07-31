@@ -16,7 +16,6 @@ interface TerminalProps {
   linkedin: string;
   github: string;
   angelList: string;
-  twitter: string;
 }
 
 const Terminal: React.FC<TerminalProps> = ({
@@ -78,7 +77,7 @@ const Terminal: React.FC<TerminalProps> = ({
 
   const skills = useMemo(
     () =>
-      "['NodeJS', 'Typescript', 'Express', 'Postgres', 'MongoDB', 'React', 'React Native', 'Docker', 'Styled Components', 'Jest', 'Mocha', 'TypeORM', 'AWS']",
+      "['NodeJS', 'React', 'React Native', 'Typescript', 'Postgres', 'MongoDB', 'Docker', 'Styled Components', 'Jest', 'Mocha', 'TypeORM', 'AWS']",
     [],
   );
 
@@ -89,7 +88,7 @@ const Terminal: React.FC<TerminalProps> = ({
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://aluna.social/"
+          href="https://www.linkedin.com/company/alunasocial/mycompany/"
         >
           Aluna.Social
         </a>
