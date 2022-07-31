@@ -10,7 +10,6 @@ interface SocialListProps {
   linkedin: string;
   github: string;
   angelList: string;
-  twitter: string;
 }
 
 const SocialList: React.FC<SocialListProps> = ({
